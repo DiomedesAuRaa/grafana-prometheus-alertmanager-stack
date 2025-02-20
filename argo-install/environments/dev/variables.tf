@@ -1,0 +1,22 @@
+variable "kubeconfig_path" {
+  description = "Path to the kubeconfig file"
+  type        = string
+  default     = ""
+}
+
+variable "cluster_name" {
+  description = "Name of the Kubernetes cluster"
+  type        = string
+}
+
+variable "enable_grafana" {
+  default = true
+}
+
+variable "enable_prometheus" {
+  default = true
+}
+
+variable "enable_alertmanager" {
+  default = true
+}
